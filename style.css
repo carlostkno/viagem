@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', serif;
+}
+
+.nav-logo a{
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+}
+
+.logo {
+    color: #fff;
+    display: inline-block;
+}
+
+.titulo-logo {
+    color: #fff;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    display: inline;
+    margin: 22px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 33px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 3px;
+}
+
+.nav-links .btn {
+    background-color: #fff;
+    color: #000;
+    padding: 6px 25px;
+    border-radius: 20px;
+}
+
+.nav-links .btn:hover {
+    background-color: tomato;
+    transition: 1s all;
+    color: whitesmoke;
+}
+
+.nav-links .login:hover {
+    color: tomato;
+    transition: 1s;
+}
+
+.main {
+    margin-top: 180px;
+    color: #fff;
+}
+
+.main h1 {
+    font-size: 60px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.pesquisa {
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.pesquisa input {
+    background: transparent;
+    width: 600px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+
+.pesquisa button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.pesquisa button img {
+    width: 22px;
+}
+
+
+
+@media (max-width:700px) {
+    .pesquisa input {
+        width: 230px;
+    }
+    .nav-logo a {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .nav-links {
+        justify-content: center;
+    }
+    .nav-links a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-links .btn {
+        background: transparent;
+        background-color: #fff;
+        color: #000;
+        padding: 6px;
+        border-radius: 20px;
+    }
+    .main h1 {
+        font-size: 30px;
+    }
+    .main {
+        margin-top: 60px;
+    }
+    .pesquisa {
+        padding: 10px 20px;
+    }
+    .pesquisa button img {
+        width: 16px;
+    }
+
+}
